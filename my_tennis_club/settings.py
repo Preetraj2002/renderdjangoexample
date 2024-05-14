@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'my_tennis_club.wsgi.application'
 #         'PORT': '5432'
 #     }
 # }
-external_db_url = os.environ("DATABASE_URL")
+external_db_url = os.environ.get("DATABASE_URL")
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
